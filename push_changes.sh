@@ -12,6 +12,8 @@ git commit -m "Automated commit" 2>&1 | tee -a $LOGFILE
 
 git push 2>&1 | tee -a $LOGFILE
 
-echo "[ Script ended at $(date) ]\n" | tee -a $LOGFILE
+echo "[ Script ended at $(date) ]" | tee -a $LOGFILE
+echo "" >> $LOGFILE
+echo "" >> $LOGFILE
 
 echo "Changes pushed and log saved to $LOGFILE"
