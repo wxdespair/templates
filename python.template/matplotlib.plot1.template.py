@@ -22,7 +22,8 @@ matplotlib.rcParams["font.weight"] = "bold"
 # 创建画布
 fig, axs = plt.subplots(
     figsize=(10, 6),                            # 设置画布大小，(横向，纵向)，单位为英寸
-    dpi=100,                                    # 设置分辨率
+    # dpi=100,                                    # 设置分辨率
+                                                # 最好创建画布的时候不要设置，保存图片的时候再设置，否则可能导致图片比例及文字字号失衡等问题
 )
 
 # 设置背景色
@@ -55,6 +56,9 @@ axs.set_xlabel(
                             # 设置 x 轴标签的位置，相对于图像，(横向，纵向)，一般不与 set_xlabel 中的 labelpad 参数一起使用
 # axs.xaxis.set_ticks_position('top')
                             # 设置 x 轴位于上方
+# axs.xaxis.set_label_position('top')
+                            # 设置 x 轴标签位于上方
+
 
 axs.set_ylabel(
     "Y Axis",               # Y 轴标签内容
@@ -67,6 +71,9 @@ axs.set_ylabel(
                             # 由于位置原因，第二个控制纵向的参数无法正常使用，推荐使用 set_ylabel 中的 labelpad 参数
 # axs.yaxis.set_ticks_position('right')
                             # 设置 y 轴位于右侧
+# axs.yaxis.set_label_position('right')
+                            # 设置 y 轴标签位于右侧
+
 
 # 设置刻度与刻度线（坐标轴上那一小段线段）
 axs.tick_params(
