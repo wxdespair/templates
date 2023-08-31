@@ -78,3 +78,14 @@ To github.com:wxdespair/templates.git
 
 
 [>>> Start : Thu Aug 31 10:16:33     2023 <<<]
+warning: in the working copy of 'log/push_changes_log/logfile.log', LF will be replaced by CRLF the next time Git touches it
+[main d16fa6e] Automated commit
+ 3 files changed, 263 insertions(+), 116 deletions(-)
+ delete mode 100644 python.template/matplotlib.plot1.template.py
+ create mode 100644 python.template/matplotlib/matplotlib.plot1.template.py
+To github.com:wxdespair/templates.git
+   4ae73ef..d16fa6e  main -> main
+[>>> End : Thu Aug 31 10:16:39     2023 <<<]
+
+
+[>>> Start : Thu Aug 31 10:18:43     2023 <<<]
