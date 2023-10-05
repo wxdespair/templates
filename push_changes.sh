@@ -7,6 +7,8 @@ TMPFILE="./log/push_changes_log/logfiletmp.log"
 
 echo "[>>> Start : $(date) <<<]" | tee -a $TMPFILE
 
+python ./tools/update_readme.py
+
 git add . 2>&1 | tee -a $TMPFILE
 
 git commit -m "Automated commit" 2>&1 | tee -a $TMPFILE
